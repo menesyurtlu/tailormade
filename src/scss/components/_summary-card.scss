@@ -1,0 +1,115 @@
+.current-summary-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 25px;
+  background: $white;
+  z-index: 1453;
+  height: 80px;
+
+  // Responsive settings
+  @include media-breakpoint-down(md) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+
+    .next {
+      border-radius: 0 !important;
+    }
+  }
+
+  @include  media-breakpoint-down(sm) {
+    .selected-car {
+      display: none !important;
+    }
+  }
+
+  .selected-car {
+    position: relative;
+    display: flex;
+    width: 200px;
+    padding: 1rem 2rem;
+
+    &:after {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-self: center;
+      content: "";
+      background: transparentize($secondary, .95);
+      width: 2px;
+      height: 60%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .badge {
+      position: absolute;
+      left: 50%;
+      top: -15%;
+      transform: translateX(-50%);
+      display: flex;
+      padding: 0.2rem 0.6rem;
+      background: $secondary;
+      color: $white;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 2.5px;
+      border-radius: 25px;
+      width: auto;
+    }
+
+    .car-image {
+      transform: scaleX(-1);
+      height: 60px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .current-total-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-left: 1rem;
+
+    &:before {
+      content: "TOTAL";
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+
+  .next {
+    background: $secondary;
+    color: $white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding: 1rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    i, i:before {
+      margin-left: 1rem;
+    }
+  }
+}

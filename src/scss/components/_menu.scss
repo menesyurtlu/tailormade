@@ -1,0 +1,48 @@
+.configurator-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  // Responsive settings
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 2rem !important;
+    .menu-item {
+      margin: 0 .25rem !important;
+      font-size: .8rem !important;
+      .menu-link {
+        padding: .3rem .6rem !important;
+      }
+    }
+  }
+
+  .menu-item {
+    opacity: .4;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    margin: 0 .75rem;
+
+    .menu-link {
+      padding: .6rem .8rem;
+    }
+
+    &.active, &:hover {
+      position: relative;
+      font-weight: 600;
+      opacity: 1;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $secondary;
+        height: 4px;
+        width: 20%;
+      }
+    }
+  }
+}

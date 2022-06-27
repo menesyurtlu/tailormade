@@ -1,0 +1,116 @@
+/*!
+ * Copyright (c) 2021.
+ * Coded by Enes Yurtlu <meyurtlu@gmail.com>
+ */
+
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #161A1D;
+
+// fusv-disable
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+);
+
+$blue: #003a6a;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$theme: #d00000;
+$theme-secondary: #282828;
+$theme-bg: #F5F3F4;
+$border-color: #f2f2f2;
+
+// scss-docs-start colors-map
+$colors: (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+);
+// scss-docs-end colors-map
+
+$primary: $theme;
+$secondary: $theme-secondary;
+$background: $theme-bg;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "background": $background,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+// scss-docs-end theme-colors-map
+
+$min-contrast-ratio: 2.5;
+$enable-rounded: false;
+// $border-width: 0;
+$border-radius: .5rem;
+$border-radius-sm: .25rem;
+$border-radius-lg: .35rem;
+$border-radius-pill: 50rem;
+$box-shadow: none;
+$tskn-box-shadow: 0 0 12px -5px rgb(175, 175, 175, 50%), 0px 13px 13px -12px rgb(175, 175, 175, 90%);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 970px,
+    xl: 971px,
+    xxl: 1180px
+);
+
+.bg-transparent {
+    background-color: transparent;
+}

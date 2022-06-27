@@ -1,0 +1,63 @@
+// Regular
+@font-face {
+    font-family: "tskn-icons";
+    src: url('./webfonts/tskn-icons-regular-rounded.eot?#iefix') format('embedded-opentype'),
+    url('./webfonts/tskn-icons-regular-rounded.woff2') format('woff2'),
+    url("./webfonts/tskn-icons-regular-rounded.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "tskn-icons";
+    src:  url('./webfonts/tskn-icons-solid-rounded.eot?#iefix') format('embedded-opentype'),
+    url('./webfonts/tskn-icons-solid-rounded.woff2') format('woff2'),
+    url("./webfonts/tskn-icons-solid-rounded.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "tskn-brands";
+    src:  url('./webfonts/tskn-icons-brands.eot?#iefix') format('embedded-opentype'),
+    url('./webfonts/tskn-icons-brands.woff2') format('woff2'),
+    url("./webfonts/tskn-icons-brands.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+
+i[class^="tskn-icon-"]:before, i[class*=" tskn-icon-"]:before, span[class^="tskn-icon-"]:before, span[class*="tskn-icon-"]:before {
+    font-family: tskn-icons !important;
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+i[class^="tskn-f-icon-"]:before, i[class*=" tskn-f-icon-"]:before, span[class^="tskn-f-icon-"]:before, span[class*="tskn-f-icon-"]:before {
+    font-family: tskn-icons !important;
+    font-style: normal;
+    font-weight: 600;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+i[class^="tskn-brand-"]:before, i[class*=" tskn-brand-"]:before, span[class^="tskn-brand-"]:before, span[class*="tskn-brand-"]:before {
+    font-family: tskn-brands !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import "regular";
+@import "solid";
+@import "brands";
